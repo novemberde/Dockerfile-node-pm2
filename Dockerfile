@@ -1,8 +1,6 @@
-FROM node
+FROM node:8.11.1
 
-MAINTAINER Novemberde "novemberde.github.io"
-
-# node 배포환경으로 변수 설정
+# Default NODE_ENV is production!
 ENV NODE_ENV production
 
 RUN npm install -g pm2 node-gyp
